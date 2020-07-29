@@ -1,200 +1,369 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
   <meta charset="utf-8">
   
+  <title>java基础 | Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <title>Tag: java基础 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/java%E5%9F%BA%E7%A1%80/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
+  <meta property="og:site_name" content="Hexo"/>
+
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <meta property="og:image" content=""/>
+  
+
   
   
-    <link rel="icon" href="/favicon.png">
+    <link href="/favicon.png" rel="icon">
   
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/cerulean.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight-default.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/comment.css" media="screen" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+  <![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
   
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <script src="/js/marked.js"></script>
+    <script src="/js/comment.js"></script>
+    <script src="/js/timeago.min.js"></script>
+    <script src="/js/highlight.min.js"></script>
+	<script src="/js/spin.min.js"></script>
   
+  <!-- analytics -->
   
-<link rel="stylesheet" href="/css/style.css">
+
+
 
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/">Hexo</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
       </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/08/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
-  <time datetime="2020-03-07T16:00:00.000Z" itemprop="datePublished">Mar 8</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/08/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/">二进制,八进制,十进制,十六进制之间的转换</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GIT/" rel="tag">GIT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/GIT/" style="font-size: 10px;">GIT</a> <a href="/tags/java%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">java基础</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/07/24/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2020/07/24/git%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">git的基本命令</a>
-          </li>
-        
-          <li>
-            <a href="/2020/03/08/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/">二进制,八进制,十进制,十六进制之间的转换</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+    </div> <!-- container -->
 </nav>
-    
+<div class="clearfix"></div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <div class="container">
+    <div class="content">
+      
 
+<!-- title -->
+<div class="page-header page-header-inverse ">
+  <h1 class="archive-title-tag title title-inverse ">java基础</h1>
+</div>
 
+<div class="row page">
+  <!-- cols -->
   
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <div class="col-md-9">
+	
 
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+	  <div id="top_search"></div>
+
+      
+         <!-- display as entry -->
+	     <div class="mypage">
+	       
+		     
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2020-03-08 </div>
+			<div class="article-title"><a href="/2020/03/08/二进制-八进制-十进制-十六进制之间的转换/" >二进制,八进制,十进制,十六进制之间的转换</a></div>						
+		</h3>
+	
 
 
+		     <div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="区分二进制-八进制-十进制-十六进制"><a href="#区分二进制-八进制-十进制-十六进制" class="headerlink" title="区分二进制,八进制,十进制,十六进制"></a>区分二进制,八进制,十进制,十六进制</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">如果这样定义个变量</span><br><span class="line">int a &#x3D; 18;</span><br><span class="line">变量a到底是几进制的呢?java中有规定,如果要明确一个变量是几进制数的,必须添加相关标识,否则默认是十进制数</span><br><span class="line">二进制以0b开头,八进制以0开头,十六进制以0x或者0X开头</span><br><span class="line">int a &#x3D; 18;</span><br><span class="line">对应二进制数 int a &#x3D; 0b10010;</span><br><span class="line">对应八进制数 int a &#x3D; 022;</span><br><span class="line">对应十六进制数 int a &#x3D; 0x12;</span><br><span class="line"></span><br><span class="line">二进制 : 只能是 0 或者是 1 </span><br><span class="line">八进制 : 0,1,2,3,4,5,6,7</span><br><span class="line">十进制 : 0,1,2,3,4,5,6,7,8,9</span><br><span class="line">十六进制 : 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="二进制-八进制-十进制-十六进制他们之间到底是怎么转换的呢"><a href="#二进制-八进制-十进制-十六进制他们之间到底是怎么转换的呢" class="headerlink" title="二进制,八进制,十进制,十六进制他们之间到底是怎么转换的呢"></a>二进制,八进制,十进制,十六进制他们之间到底是怎么转换的呢</h2><h3 id="十进制-转成-二进制-八进制-十六进制"><a href="#十进制-转成-二进制-八进制-十六进制" class="headerlink" title="十进制 转成 二进制,八进制,十六进制"></a>十进制 转成 二进制,八进制,十六进制</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">十进制转成对应二进制,十进制数除以2,余数倒叙排列即可,(十进制转成对应八进制,十六进制同理)</span><br><span class="line">例如 : </span><br><span class="line">int a &#x3D; 123;</span><br><span class="line">如下图 :</span><br></pre></td></tr></table></figure>
+<img src="/2020/03/08/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/十进制转成二进制.png">
+<p>余数倒叙排列 1111011</p>
 
 
-<script src="/js/script.js"></script>
+<h4 id="十进制转成对应八进制-十六进制同理-如下图"><a href="#十进制转成对应八进制-十六进制同理-如下图" class="headerlink" title="十进制转成对应八进制,十六进制同理,如下图"></a>十进制转成对应八进制,十六进制同理,如下图</h4><img src="/2020/03/08/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/八进制和十六进制.png">
+<p>十进制转成对应八进制,余数倒叙排列 173  </p>
+<p>十进制转成对应十六进制,余数倒叙排列 7b  </p>
+<p>兄弟们也可以用函数去验证一下 :  </p>
+<p>Integer.toBinaryString(123)</p>
+<p>Integer.toOctalString(123)</p>
+<p>Integer.toHexString(123)</p>
+<p>顺带一句</p>
+<p>也可以取字符的二进制,Integer.toBinaryString('A'); 字符 A 对应的ascoll码值 65的二进制 1000001</p>
+
+<hr>
+<h3 id="二进制-八进制-十六进制-转成-十进制"><a href="#二进制-八进制-十六进制-转成-十进制" class="headerlink" title="二进制,八进制,十六进制 转成 十进制"></a>二进制,八进制,十六进制 转成 十进制</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">二进制数转成十进制数,底数乘以位数的幂(八进制,十六进制 转成 十进制同理),看不懂不用记</span><br><span class="line">例如 :</span><br><span class="line">int a &#x3D; 0b10010;</span><br><span class="line">&#x2F;&#x2F; 你可以把10010,放在数组里面,[1,0,0,1,0]</span><br><span class="line">数值对应的下标(只不过他们的下标反过来了)</span><br><span class="line">0   0</span><br><span class="line">1   1</span><br><span class="line">0   2</span><br><span class="line">0   3</span><br><span class="line">1   4</span><br><span class="line">二进制计算 &#x3D;&gt; 1*2^4+0*2^3+0*2^2++1*2^1+0*2^0 &#x3D; 18</span><br><span class="line"></span><br><span class="line">八进制数转成十进制数,例如 : </span><br><span class="line">int b &#x3D; 022;</span><br><span class="line">2*8^1+2*8^0 &#x3D; 18</span><br><span class="line"></span><br><span class="line">十六制数转成十进制数,例如 : </span><br><span class="line">int c &#x3D; 0X12;</span><br><span class="line">1*16^1+2*16^0 &#x3D; 18  </span><br><span class="line"></span><br><span class="line">兄弟们也可以用函数去验证一下 :</span><br><span class="line">Integer.parseInt(&quot;10010&quot;,2)	</span><br><span class="line">Integer.parseInt(&quot;22&quot;,8)</span><br><span class="line">Integer.parseInt(&quot;12&quot;,16)</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="二进制-转成-八进制-十六进制"><a href="#二进制-转成-八进制-十六进制" class="headerlink" title="二进制 转成 八进制,十六进制"></a>二进制 转成 八进制,十六进制</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">三位二进制数,对应一位八进制数(不足三位的,从前面开始补0),将结果顺序排序,why? 2^3 &#x3D; 8</span><br><span class="line"></span><br><span class="line">用上面的二进制数举例:</span><br><span class="line">int a &#x3D; 0b10010;</span><br><span class="line">10010,前面补 0,得 010010, </span><br><span class="line">010  010</span><br><span class="line"> 2    2 &#x3D;&gt; 最终结果为 22</span><br><span class="line"></span><br><span class="line">四位二进制数,对应一位十六进制数(不足三位的,从前面开始补0),将结果顺序排序,why? 2^4 &#x3D; 16</span><br><span class="line">还是用上面的二进制数举例:</span><br><span class="line">int a &#x3D; 0b10010;</span><br><span class="line">10010,前面补 0,得 00010010,</span><br><span class="line">0001  0010</span><br><span class="line">  1    2 &#x3D;&gt;最终结果为 12</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="十进制小数与二进制之间的相互转换"><a href="#十进制小数与二进制之间的相互转换" class="headerlink" title="十进制小数与二进制之间的相互转换"></a>十进制小数与二进制之间的相互转换</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">整数部分,依然是除以1,取余数倒叙排列,小数部分乘以2,取出整数部分,剩下的小数部分继续乘以2,直到小数部分为0,</span><br><span class="line">或者达到精度要求为止,将整数部分顺序排列</span><br><span class="line">这也是 double 数据类型进行运算的时候为什么会出现误差</span><br><span class="line">例如 : </span><br><span class="line">int a &#x3D; 0.125;</span><br><span class="line">0.125*2 &#x3D; 0.25 整数部分 0</span><br><span class="line">0.25*2 &#x3D; 0.5   整数部分 0</span><br><span class="line">0.5*2 &#x3D; 1      整数部分 1</span><br><span class="line">最终结果 : 0.001</span><br><span class="line">反之,二进制小数,怎么转成十进制呢 ? ,和二进制转成十进制数同理,底数乘以位数的幂,只不过是副指数幂</span><br><span class="line">用上面的结果举例 : 0.001</span><br><span class="line">0*2^-1 + 0*2^-2 + 1*2^-3 &#x3D; 0.125</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="负数怎么转换呢"><a href="#负数怎么转换呢" class="headerlink" title="负数怎么转换呢?"></a>负数怎么转换呢?</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">先看几个概念 :</span><br><span class="line">在计算机科学中,bit是表示信息的最小单位,叫做二进制位;一般用0和1表示</span><br><span class="line">原码 : 就是二进制数表示法,即最高位为符号位，“0”表示正，“1”表示负，其余位表示数值的大小</span><br><span class="line">反码 :正数的反码和原码相同,负数的反码,是原码逐位取反,符号位除外</span><br><span class="line">补码 : 正数的补码和原码相同,负数的补码,是其反码末位加 1</span><br><span class="line"></span><br><span class="line">十进制负数转成二进制 : 先取负数的绝对值,转换成二进制原码,再取反码,再取补码,就是负数的二进制了</span><br><span class="line"></span><br><span class="line">例如 :</span><br><span class="line">int a &#x3D; 5; &#x2F;&#x2F; 正数</span><br><span class="line">二进制数 : 101</span><br><span class="line">int b &#x3D; -5; &#x2F;&#x2F; 负数</span><br><span class="line">正数 5 的二进制数 : 101</span><br><span class="line">原码 : 101</span><br><span class="line">反码 : 010 (原码取反)</span><br><span class="line">补码 : 011 (反码末尾数加一)</span><br><span class="line">用 Integer.toBinaryString(-5) 验证,结果应该是 : 11111111111111111111111111111011 (int类型占四个字节,32位bit)</span><br><span class="line"></span><br><span class="line">那十进制负数怎么转成八进制,十六进制呢 ? </span><br><span class="line"></span><br><span class="line">上面不是得出 -5 的二进制了吗,再根据二进制转八进制,转十六进制,就能得到负数的八进制数,十六进制数了</span><br></pre></td></tr></table></figure>
+<p>(如有更好的办法,欢迎微信留言(数字也是QQ号)-&gt;CQ1461928990)</p>
+<hr>
+<a src="javascript:void(0)" class="toTop" onclick="toTop()" title="回到顶部">
+<img src="/2020/03/08/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/up.png" style="width: 35px;">
+</a>
+
+<hr>
+<style>
+.article-entry p, .article-entry table {
+    line-height: 1.9em;
+    margin: 0;
+}
+.toTop {
+    position: fixed;
+    top: 55%;
+    right: 33%;
+    padding: 5px;
+    background-color: #5a5a5a;
+    border-radius: 50%;
+}
+.toTop:hover{
+    cursor: pointer;
+}
+</style>
+<script>
+    function toTop(){
+        var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+        document.documentElement.scrollTop = 0
+        var gotoTopSetInterval = setInterval(function(){
+            osTop = osTop-50;
+             if (osTop<0){
+                 osTop = 0;
+                 clearInterval(gotoTopSetInterval);
+             }
+             document.documentElement.scrollTop = osTop;
+            }, 10);
+    }
+    $(function(){
+        $("#footer-info").html("2020你好")
+    })
+</script>
+<hr>
+
+	
+	</div>
+  <a type="button" href="/2020/03/08/二进制-八进制-十进制-十六进制之间的转换/#more" class="btn btn-default more">Read More</a>
+</div>
+
+	       
+	     </div>
+	     <div>
+	       <center>
+	         <div class="pagination">
+<ul class="pagination">
+	 
+</ul>
+</div>
+
+	       </center>
+	     </div>	
+      
+
+</div> <!-- col-md-9/col-md-12 -->
 
 
-
-
+<div class="col-md-3">
+	<div id="sidebar">
+	
+			
+  <div id="site_search">
+   <div class="form-group">
+    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
+   </div>  
+  <div id="local-search-result"></div>
   </div>
+
+
+		
+			<div class="widget">
+    
+	    <h4 class="dsq-widget-title">Recent Comments</h4>
+		<div id="recent-comments"></div>
+		<script type="text/javascript">
+		    getRecentCommentsList({
+			   type: "github" ? "github" : "github",
+			   user: "wzpan",
+               repo: "hexo-theme-freemind-blog",
+               client_id: "bf7d4ba11877db88543e",
+               client_secret: "bff8a6b06b745c0bfcdccbe225623ea8e2a057bb",
+			   count: "5" ? "5" : 5,
+			   recent_comments_target: "#recent-comments"
+			});
+		</script>
+	
+</div>
+
+		
+			
+		
+			
+	<div class="widget">
+		<h4>Tag Cloud</h4>
+		<ul class="tag_box inline list-unstyled">		
+		
+			<li><a href="/tags/java基础/">java基础<span>1</span></a></li>
+		
+			<li><a href="/tags/GIT/">GIT<span>1</span></a></li>
+		
+		 
+		</ul>
+	</div>
+
+
+		
+			
+<div class="widget">
+  <h4>Recent Posts</h4>
+  <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2020/07/24/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
+      </li>
+    
+      <li>
+        <a href="/2020/07/24/git的基本命令/" ><i class="fa fa-file-o"></i>git的基本命令</a>
+      </li>
+    
+      <li>
+        <a href="/2020/03/08/二进制-八进制-十进制-十六进制之间的转换/" ><i class="fa fa-file-o"></i>二进制,八进制,十进制,十六进制之间的转换</a>
+      </li>
+    
+  </ul>
+</div>
+
+		
+			
+<div class="widget">
+	<h4>Links</h4>
+	<ul class="blogroll list-unstyled">
+	
+		<li><i class="fa fa-github"></i><a href="https://github.com/wzpan/freemind/" title="Freemind's Github repository." target="_blank"]);">Freemind</a></li>
+	
+		<li><i class="fa fa-github"></i><a href="http://www.github.com/wzpan" title="My Github account." target="_blank"]);">My Github</a></li>
+	
+		<li><i class="fa fa-linkedin"></i><a href="http://www.linkedin.com/in/hahack" title="My Linkin account." target="_blank"]);">My LinkedIn</a></li>
+	
+	</ul>
+</div>
+
+
+		
+	</div> <!-- sidebar -->
+</div> <!-- col-md-3 -->
+
+
+
+
+    </div>
+  </div>
+  <div class="container-narrow">
+    <footer> <p>
+  &copy; 2020 John Doe
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/" target="_blank" rel="noopener">Freemind</a>.    
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+
+<!-- syntax highlighting -->
+
+  <script>
+  marked.setOptions({
+    highlight: function (code, lang) {
+        return hljs.highlightAuto(code).value;
+    }
+  });
+  function Highlighting(){
+    var markdowns = document.getElementsByClassName('markdown');
+    for(var i=0;i<markdowns.length;i++){
+        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
+    }
+  }
+  window.addEventListener('DOMContentLoaded', Highlighting, false);
+  window.addEventListener('load', Highlighting, false);
+  </script>
+
+
 </body>
 </html>

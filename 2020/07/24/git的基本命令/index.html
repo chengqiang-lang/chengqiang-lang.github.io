@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   
-
   
   <title>git的基本命令 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="1. Git文件的4种状态 Untracked(未被跟踪的): 此文件在文件夹中,但并没有加入到git库, 不参与版本控制. 通过git add状态变为Staged.Unmodify(文件已经入库): 文件已经入库,未修改,即版本库中的文件快照内容与文件夹中完全一致.这种类型的文件有两种去处,如果它被修改,而变为Modified.如果使用git rm移出版本库,则成为Untracked文件.Mod">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git的基本命令">
@@ -26,11 +25,18 @@
     <link rel="icon" href="/favicon.png">
   
   
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
   
   
 <link rel="stylesheet" href="/css/style.css">
 
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 <body>
@@ -67,10 +73,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-git的基本命令" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-git的基本命令" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/07/24/git%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" class="article-date">
-  <time datetime="2020-07-23T16:00:00.000Z" itemprop="datePublished">2020-07-24</time>
+  <time class="dt-published" datetime="2020-07-23T16:00:00.000Z" itemprop="datePublished">2020-07-24</time>
 </a>
     
   </div>
@@ -80,14 +86,14 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
+    <h1 class="p-name article-title" itemprop="headline name">
       git的基本命令
     </h1>
   
 
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div class="e-content article-entry" itemprop="articleBody">
       
         <h2 id="1-Git文件的4种状态"><a href="#1-Git文件的4种状态" class="headerlink" title="1. Git文件的4种状态"></a>1. Git文件的4种状态</h2><hr>
 <p>Untracked(未被跟踪的): 此文件在文件夹中,但并没有加入到git库, 不参与版本控制. 通过git add状态变为Staged.<br>Unmodify(文件已经入库): 文件已经入库,未修改,即版本库中的文件快照内容与文件夹中完全一致.这种类型的文件有两种去处,如果它被修改,而变为Modified.如果使用git rm移出版本库,则成为Untracked文件.<br>Modified(文件已修改): 文件已修改,仅仅是修改,并没有进行其他的操作.这个文件也有两个去处,通过git add可进入暂存staged状态,使用git checkout则丢弃修改过, 返回到unmodify状态,这个git checkout即从库中取出文件,覆盖当前修改.<br>Staged(暂存状态): 执行git commit则将修改同步到库中,这时库中的文件和本地文件又变为一致,文件为Unmodify状态.执行git reset HEAD filename取消暂存,文件状态为Modified.</p>
@@ -95,7 +101,8 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/07/24/git%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" data-id="ckd5pfihk0000foub08e3dhh8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/24/git%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" data-id="ckd5pfihk0000foub08e3dhh8" data-title="git的基本命令" class="article-share-link">Share</a>
+      
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GIT/" rel="tag">GIT</a></li></ul>
@@ -126,6 +133,7 @@
   
 </article>
 
+
 </section>
         
           <aside id="sidebar">
@@ -137,7 +145,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GIT/" rel="tag">GIT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GIT/" rel="tag">GIT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag">java基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%99%E7%9D%80%E7%8E%A9%E7%8E%A9%E7%9A%84/" rel="tag">写着玩玩的</a></li></ul>
     </div>
   </div>
 
@@ -147,7 +155,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/GIT/" style="font-size: 10px;">GIT</a> <a href="/tags/java%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">java基础</a>
+      <a href="/tags/GIT/" style="font-size: 10px;">GIT</a> <a href="/tags/java%E5%9F%BA%E7%A1%80/" style="font-size: 20px;">java基础</a> <a href="/tags/%E5%86%99%E7%9D%80%E7%8E%A9%E7%8E%A9%E7%9A%84/" style="font-size: 10px;">写着玩玩的</a>
     </div>
   </div>
 
@@ -167,6 +175,14 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/07/28/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9B%B4%E6%8E%A5%E7%9A%84%E8%BD%AC%E6%8D%A2/">二进制,八进制,十进制,十六进制直接的转换</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/24/hell-hexo/">hell hexo</a>
+          </li>
         
           <li>
             <a href="/2020/07/24/hello-world/">Hello World</a>
@@ -193,10 +209,11 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
+
     </div>
     <nav id="mobile-nav">
   
@@ -207,19 +224,19 @@
 </nav>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
 
 
   
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
 <script src="/js/script.js"></script>
+
 
 
 

@@ -128,7 +128,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .outer {
-  max-width: 1220px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -182,7 +182,7 @@ body {
 @media screen and (min-width: 768px) {
   #main {
     display: inline;
-    float: left;
+    float: right;
     width: 73.33333333333333%;
     margin: 0 0.833333333333333%;
   }
@@ -1291,7 +1291,7 @@ pre .javascript .function {
   #sidebar {
     display: inline;
     float: left;
-    width: 23.333333333333332%;
+    width: 20%;
     margin: 0 0.833333333333333%;
   }
 }

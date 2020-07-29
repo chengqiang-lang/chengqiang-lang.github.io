@@ -14,14 +14,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="区分二进制,八进制,十进制,十六进制12345678如果这样定义个变量int a &#x3D; 18;变量a到底是几进制的呢?java中有规定,如果要明确一个变量是几进制数的,必须添加相关标识,否则默认是十进制数二进制以0b开头,八进制以0开头,十六进制以0x或者0X开头int a &#x3D; 18;对应二进制数 int a &#x3D; 0b10010;对应八进制数 int a &#x3D;">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/image/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%88%90%E4%BA%8C%E8%BF%9B%E5%88%B6.png">
-<meta property="og:image" content="http://yoursite.com/image/%E5%85%AB%E8%BF%9B%E5%88%B6%E5%92%8C%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/28/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9B%B4%E6%8E%A5%E7%9A%84%E8%BD%AC%E6%8D%A2/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%88%90%E4%BA%8C%E8%BF%9B%E5%88%B6.png">
+<meta property="og:image" content="http://yoursite.com/2020/07/28/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9B%B4%E6%8E%A5%E7%9A%84%E8%BD%AC%E6%8D%A2/%E5%85%AB%E8%BF%9B%E5%88%B6%E5%92%8C%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6.png">
 <meta property="article:published_time" content="2020-07-28T06:44:20.000Z">
-<meta property="article:modified_time" content="2020-07-28T08:53:49.114Z">
+<meta property="article:modified_time" content="2020-07-29T01:42:48.404Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="java基础">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/image/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%88%90%E4%BA%8C%E8%BF%9B%E5%88%B6.png">
+<meta name="twitter:image" content="http://yoursite.com/2020/07/28/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9B%B4%E6%8E%A5%E7%9A%84%E8%BD%AC%E6%8D%A2/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%88%90%E4%BA%8C%E8%BF%9B%E5%88%B6.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -95,11 +95,11 @@
         <h2 id="区分二进制-八进制-十进制-十六进制"><a href="#区分二进制-八进制-十进制-十六进制" class="headerlink" title="区分二进制,八进制,十进制,十六进制"></a>区分二进制,八进制,十进制,十六进制</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">如果这样定义个变量</span><br><span class="line">int a &#x3D; 18;</span><br><span class="line">变量a到底是几进制的呢?java中有规定,如果要明确一个变量是几进制数的,必须添加相关标识,否则默认是十进制数</span><br><span class="line">二进制以0b开头,八进制以0开头,十六进制以0x或者0X开头</span><br><span class="line">int a &#x3D; 18;</span><br><span class="line">对应二进制数 int a &#x3D; 0b10010;</span><br><span class="line">对应八进制数 int a &#x3D; 022;</span><br><span class="line">对应十六进制数 int a &#x3D; 0x12;</span><br></pre></td></tr></table></figure>
 <hr>
 <h2 id="二进制-八进制-十进制-十六进制他们之间到底是怎么转换的呢"><a href="#二进制-八进制-十进制-十六进制他们之间到底是怎么转换的呢" class="headerlink" title="二进制,八进制,十进制,十六进制他们之间到底是怎么转换的呢"></a>二进制,八进制,十进制,十六进制他们之间到底是怎么转换的呢</h2><h3 id="十进制-转成-二进制-八进制-十六进制"><a href="#十进制-转成-二进制-八进制-十六进制" class="headerlink" title="十进制 转成 二进制,八进制,十六进制"></a>十进制 转成 二进制,八进制,十六进制</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">十进制转成对应二进制,十进制数除以2,余数倒叙排列即可,(十进制转成对应八进制,十六进制同理)</span><br><span class="line">例如 : </span><br><span class="line">int a &#x3D; 123;</span><br><span class="line">如下图 :</span><br></pre></td></tr></table></figure>
-<img src="/image/十进制转成二进制.png">
+<img src="/2020/07/28/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9B%B4%E6%8E%A5%E7%9A%84%E8%BD%AC%E6%8D%A2/十进制转成二进制.png">
 <p>余数倒叙排列 1111011</p>
 
 
-<h4 id="十进制转成对应八进制-十六进制同理-如下图"><a href="#十进制转成对应八进制-十六进制同理-如下图" class="headerlink" title="十进制转成对应八进制,十六进制同理,如下图"></a>十进制转成对应八进制,十六进制同理,如下图</h4><img src="/image/八进制和十六进制.png">
+<h4 id="十进制转成对应八进制-十六进制同理-如下图"><a href="#十进制转成对应八进制-十六进制同理-如下图" class="headerlink" title="十进制转成对应八进制,十六进制同理,如下图"></a>十进制转成对应八进制,十六进制同理,如下图</h4><img src="/2020/07/28/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9B%B4%E6%8E%A5%E7%9A%84%E8%BD%AC%E6%8D%A2/八进制和十六进制.png">
 <p>十进制转成对应八进制,余数倒叙排列 173  </p>
 <p>十进制转成对应十六进制,余数倒叙排列 7b  </p>
 兄弟们也可以用函数去验证一下 :  <br>
@@ -129,6 +129,15 @@ Integer.toHexString(123)
   
     
 <nav id="article-nav">
+  
+    <a href="/2020/07/28/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          二进制-八进制-十进制-十六进制之间的转换
+        
+      </div>
+    </a>
   
   
     <a href="/2020/07/24/hell-hexo/" id="article-nav-older" class="article-nav-link-wrap">
@@ -182,6 +191,10 @@ Integer.toHexString(123)
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/07/28/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/">二进制-八进制-十进制-十六进制之间的转换</a>
+          </li>
         
           <li>
             <a href="/2020/07/28/%E4%BA%8C%E8%BF%9B%E5%88%B6-%E5%85%AB%E8%BF%9B%E5%88%B6-%E5%8D%81%E8%BF%9B%E5%88%B6-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9B%B4%E6%8E%A5%E7%9A%84%E8%BD%AC%E6%8D%A2/">二进制,八进制,十进制,十六进制直接的转换</a>
